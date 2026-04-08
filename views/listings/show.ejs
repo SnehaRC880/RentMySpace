@@ -75,11 +75,19 @@
                   <p class="starability-result card-text" data-rating="<%=review.rating%>"></p>
                 <p class="card-text"><%=review.comment%></p>
                 <!-- <p class="card-text"><%=review.rating%>star</p> -->
+<<<<<<< HEAD
             <% if(currUser && review.author._id.equals(currUser._id)) { %>    
             <form class="mb-3" method="post" action="/listings/<%=listing._id%>/reviews/<%=review._id%>?_method=DELETE">
                 <button class="btn btn-sm btn-dark">Delete</button>
             </form>
             <%  }   %>
+=======
+            <% if(currUser && review.author._id.equals(currUser._id)) { %>
+            <form class="mb-3" method="post" action="/listings/<%=listing._id%>/reviews/<%=review._id%>?_method=DELETE">
+                <button class="btn btn-sm btn-dark">Delete</button>
+            </form>
+            <%   }   %>
+>>>>>>> 71e9099a9c669016da84a043510d28cb616eb8b6
         </div>
         </div>
         <% } %>
